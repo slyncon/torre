@@ -18,63 +18,44 @@
 <body>
   
   <nav class="light-blue lighten-2" role="navigation">
-    
     <div class="nav-wrapper container">
-        
-        {{!-- <a id="logo-container" href="#" class="brand-logo left">
-          <img src="img/torre-logo.png" class="logo">
-        </a>  --}}
-
-        <form id="form-search-bar">
+        <form id="form-search-bar" method="POST" action="/searchTorrex">
           <div class="input-field search-bar">
-            <input id="search" type="search" required>
+            <input id="search" name="name" type="search" required>
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
           </div>
         </form>
     </div>
-  
   </nav>
 
   <div class="container">
     <div class="section">
-
+        
       <div class="row">
         <div class="">
-          <ul class="collection">
-            <li class="collection-item avatar">
-            <img src="images/yuna.jpg" alt="" class="circle">
-            <span class="title">Title</span>
-            <p>First Line <br>
-                Second Line
-            </p>
-            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-            </li>
-            <li class="collection-item avatar">
-            <i class="material-icons circle">folder</i>
-            <span class="title">Title</span>
-            <p>First Line <br>
-                Second Line
-            </p>
-            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-            </li>
-            <li class="collection-item avatar">
-            <i class="material-icons circle green">insert_chart</i>
-            <span class="title">Title</span>
-            <p>First Line <br>
-                Second Line
-            </p>
-            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-            </li>
-            <li class="collection-item avatar">
-            <i class="material-icons circle red">play_arrow</i>
-            <span class="title">Title</span>
-            <p>First Line <br>
-                Second Line
-            </p>
-            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-            </li>
-        </ul>
+            <ul class="collection">
+
+                {{#each peopleData}}
+                    <li class="collection-item avatar">
+
+                        {{#if picture}}
+                            <img src={{picture}} alt="" class="circle">
+                        {{else}}
+                            <i class="material-icons circle">person</i>
+                        {{/if}}
+
+                        <span class="title">{{name}}</span>
+                        <p>
+                            {{professionalHeadline}} 
+                            <br>
+                            
+                        </p>
+                        
+                    </li>
+                {{/each}}
+
+            </ul>
           </div>
         </div>
 

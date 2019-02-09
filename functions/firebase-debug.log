@@ -1,0 +1,46 @@
+[debug] [2019-02-09T23:38:00.388Z] ----------------------------------------------------------------------
+[debug] [2019-02-09T23:38:00.390Z] Command:       /usr/local/bin/node /home/node/.npm-global/bin/firebase serve -p 9005 -o 0.0.0.0 --only functions,hosting
+[debug] [2019-02-09T23:38:00.390Z] CLI Version:   4.2.1
+[debug] [2019-02-09T23:38:00.391Z] Platform:      linux
+[debug] [2019-02-09T23:38:00.391Z] Node Version:  v8.12.0
+[debug] [2019-02-09T23:38:00.391Z] Time:          Sat Feb 09 2019 23:38:00 GMT+0000 (UTC)
+[debug] [2019-02-09T23:38:00.391Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-09T23:38:00.400Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-09T23:38:00.401Z] > authorizing via signed-in user
+[debug] [2019-02-09T23:38:00.403Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T23:38:01.448Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T23:38:01.451Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T23:38:02.548Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/usr/src/app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-09T23:38:03.425Z] Fetching environment
+[debug] [2019-02-09T23:38:03.428Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050:getServerAppConfig  
+ 
+[debug] [2019-02-09T23:38:03.429Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-09T23:38:03.864Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T23:38:03.865Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-09T23:38:04.811Z] <<< HTTP RESPONSE 200
+[info] i  hosting[torre-495e1]: Serving hosting files from: public
+[info] ✔  hosting[torre-495e1]: Local server: http://0.0.0.0:9005
+[debug] [2019-02-09T23:38:06.036Z] Parsing function triggers
+[info] ✔  functions: app: http://0.0.0.0:9006/torre-495e1/us-central1/app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /alt=%22%22 to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /alt=%22%22 to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /alt=%22%22 to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
