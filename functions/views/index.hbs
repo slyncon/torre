@@ -16,29 +16,35 @@
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  
+  <nav class="light-blue lighten-2" role="navigation">
+    
+    <div class="nav-wrapper container">
+        
+        {{!-- <a id="logo-container" href="#" class="brand-logo left">
+          <img src="img/torre-logo.png" class="logo">
+        </a>  --}}
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <form>
+          <div class="input-field search-bar">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
     </div>
+  
   </nav>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">{{helloTorre}} </h1>
+      <h1 class="header center orange-text"> Search for anyone inside</h1>
       <div class="row center">
-        <h5 class="header col s12 light">{{statusOk}}</h5>
+        <h5 class="header col s12 light"></h5>
       </div>
-      <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
+      
+  
 
     </div>
   </div>
@@ -112,7 +118,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      © Torre Technologies Co.
       </div>
     </div>
   </footer>
