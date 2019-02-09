@@ -1,0 +1,71 @@
+[debug] [2019-02-09T18:03:03.927Z] ----------------------------------------------------------------------
+[debug] [2019-02-09T18:03:03.930Z] Command:       /usr/local/bin/node /home/node/.npm-global/bin/firebase serve -p 9005 -o 0.0.0.0 --only functions,hosting
+[debug] [2019-02-09T18:03:03.930Z] CLI Version:   4.2.1
+[debug] [2019-02-09T18:03:03.930Z] Platform:      linux
+[debug] [2019-02-09T18:03:03.930Z] Node Version:  v8.12.0
+[debug] [2019-02-09T18:03:03.930Z] Time:          Sat Feb 09 2019 18:03:03 GMT+0000 (UTC)
+[debug] [2019-02-09T18:03:03.930Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-09T18:03:03.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-09T18:03:03.940Z] > authorizing via signed-in user
+[debug] [2019-02-09T18:03:03.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T18:03:04.840Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T18:03:04.844Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T18:03:05.909Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/usr/src/app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-09T18:03:06.760Z] Fetching environment
+[debug] [2019-02-09T18:03:06.764Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050:getServerAppConfig  
+ 
+[debug] [2019-02-09T18:03:06.765Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-09T18:03:07.268Z] <<< HTTP RESPONSE 200
+[info] i  hosting[torre-495e1]: Serving hosting files from: public
+[info] ✔  hosting[torre-495e1]: Local server: http://0.0.0.0:9005
+[debug] [2019-02-09T18:03:07.365Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T18:03:07.366Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-09T18:03:09.600Z] Parsing function triggers
+[info] ✔  functions: app: http://0.0.0.0:9006/torre-495e1/us-central1/app
+[info] [hosting] Rewriting / to local function app
+[debug] [2019-02-09T18:13:05.277Z] ----------------------------------------------------------------------
+[debug] [2019-02-09T18:13:05.279Z] Command:       /usr/local/bin/node /home/node/.npm-global/bin/firebase serve -p 9005 -o 0.0.0.0 --only functions,hosting
+[debug] [2019-02-09T18:13:05.280Z] CLI Version:   4.2.1
+[debug] [2019-02-09T18:13:05.280Z] Platform:      linux
+[debug] [2019-02-09T18:13:05.280Z] Node Version:  v8.12.0
+[debug] [2019-02-09T18:13:05.280Z] Time:          Sat Feb 09 2019 18:13:05 GMT+0000 (UTC)
+[debug] [2019-02-09T18:13:05.280Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-09T18:13:05.290Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-09T18:13:05.291Z] > authorizing via signed-in user
+[debug] [2019-02-09T18:13:05.293Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T18:13:06.376Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T18:13:06.378Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torre-495e1  
+ 
+[debug] [2019-02-09T18:13:07.486Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/usr/src/app'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-02-09T18:13:08.328Z] Fetching environment
+[debug] [2019-02-09T18:13:08.332Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050:getServerAppConfig  
+ 
+[debug] [2019-02-09T18:13:08.333Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-09T18:13:08.840Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 9005 is not available. Trying another port...
+[info] i  hosting[torre-495e1]: Serving hosting files from: public
+[info] ✔  hosting[torre-495e1]: Local server: http://0.0.0.0:9010
+[debug] [2019-02-09T18:13:09.642Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-09T18:13:09.643Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-09T18:13:09.777Z] Parsing function triggers
+[info] ✔  functions: app: http://0.0.0.0:9006/torre-495e1/us-central1/app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app

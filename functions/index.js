@@ -15,9 +15,9 @@ app.get('/timestamp',(request, response) => {
 });
 
 app.get('/',(request, response) => {
-    response.set('Cache-control','public, max-age=300, s-maxage=600');
+    // response.set('Cache-control','public, max-age=300, s-maxage=600');
 
-    const helloTorre = "Hello Torrexes";
+    const helloTorre = "Hello Torrexesss";
     const statusOk = "My environment is up and running - Happy to take this exam =D";
 
     response.render('index', { helloTorre, statusOk });
