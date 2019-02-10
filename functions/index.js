@@ -32,7 +32,7 @@ app.post('/searchTorrex', (request,response) =>{
     };
 
     requestPromise(options)
-        .then(function(peopleData) {
+        .then((peopleData) =>{
             response.render('searchTorrex',{peopleData});
         })
         .catch((error) => {
