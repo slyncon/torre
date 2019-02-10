@@ -21,6 +21,8 @@ app.get('/',(request, response) => {
 
 app.post('/searchTorrex', (request,response) =>{
     
+    response.set('Cache-control','public, max-age=3000, s-maxage=6000');
+    
     const URL = 'https://torre.bio/api/people?q=' + request.body.name;
 
     var options = {
