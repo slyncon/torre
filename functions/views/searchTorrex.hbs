@@ -33,34 +33,36 @@
     <div class="section">
         
       <div class="row">
-        <div class="">
-            <ul class="collection">
-
-                {{#each peopleData}}
-                    <li class="collection-item avatar">
-                        
-                        <a href="https://torre.bio/{{publicId}}" target="_blank">
-                            {{#if picture}}
-                                <img src={{picture}} alt="" class="circle">
-                            {{else}}
-                                <i class="material-icons circle">person</i>
-                            {{/if}}
-                        </a>
-                        
-                        <a href="https://torre.bio/{{publicId}}" target="_blank">
-                            <span class="title light-blue-text lighten-2">{{name}}</span>
-                        </a>
-                        
-                        <p class="truncate">
-                            {{professionalHeadline}} 
-                            <br>
-                        </p>
-                        
-                    </li>
-                {{/each}}
-
-            </ul>
-          </div>
+            
+            {{#if peopleData}}
+                <ul class="collection">
+                
+                    {{#each peopleData}}
+                        <li class="collection-item avatar">
+                            
+                            <a href="https://torre.bio/{{publicId}}" target="_blank">
+                                {{#if picture}}
+                                    <img src={{picture}} alt="" class="circle">
+                                {{else}}
+                                    <i class="material-icons circle">person</i>
+                                {{/if}}
+                            </a>
+                            
+                            <a href="https://torre.bio/{{publicId}}" target="_blank">
+                                <span class="title light-blue-text lighten-2">{{name}}</span>
+                            </a>
+                            
+                            <p class="truncate">
+                                {{professionalHeadline}} 
+                                <br>
+                            </p>
+                            
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                <h5 class="center">Sorry, we could not find anybody by that name.</h5>
+            {{/if}}
         </div>
 
       </div>
