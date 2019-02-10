@@ -17,23 +17,20 @@
 
 <body>
   
-  <nav class="light-blue lighten-2" role="navigation">
-    <div class="nav-wrapper container">
-        <form id="form-search-bar" method="POST" action="/searchTorrex">
-          <div class="input-field search-bar">
-            <input id="search" name="name" type="search" required>
-            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-            <i class="material-icons">close</i>
-          </div>
-        </form>
-    </div>
-  </nav>
+    <nav class="light-blue lighten-2" role="navigation">
+        <div class="nav-wrapper container">
+            <form id="form-search-bar" method="POST" action="/searchTorrex">
+                <div class="input-field search-bar">
+                <input id="search" name="name" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
 
-  <div class="container">
-    <div class="section">
-        
-      <div class="row">
-            
+    <div class="container">
+        <div class="section">
             {{#if peopleData}}
                 <ul class="collection">
                 
@@ -54,9 +51,7 @@
                             
                             <p class="truncate">
                                 {{professionalHeadline}} 
-                                <br>
                             </p>
-                            
                         </li>
                     {{/each}}
                 </ul>
@@ -64,33 +59,28 @@
                 <h5 class="center">Sorry, we could not find anybody by that name.</h5>
             {{/if}}
         </div>
-
-      </div>
-
+        <br><br>
     </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l3 s12">
-          <h5 class="white-text">More about us</h5>
-          <ul>
-            <li><a class="white-text" href="https://about.torre.co/#/">Our Story</a></li>
-            <li><a class="white-text" href="https://accounts.torre.co/terms/">Terms of Use</a></li>
-            <li><a class="white-text" href="https://accounts.torre.co/privacy/">Privacy Policy</a></li>
-          </ul>
+    
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+            <div class="col l3 s12">
+                <h5 class="white-text">More about us</h5>
+                <ul>
+                <li><a class="white-text" href="https://about.torre.co/#/">Our Story</a></li>
+                <li><a class="white-text" href="https://accounts.torre.co/terms/">Terms of Use</a></li>
+                <li><a class="white-text" href="https://accounts.torre.co/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © Torre Technologies Co.
-      </div>
-    </div>
-  </footer>
-
+        <div class="footer-copyright">
+            <div class="container">
+            © Torre Technologies Co.
+            </div>
+        </div>
+    </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
