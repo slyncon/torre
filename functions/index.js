@@ -19,25 +19,8 @@ app.get('/',(request, response) => {
     response.render('index');
 });
 
-app.get('/listAll', (request,response)=>{
-    requestPromise(options)
-        .then(function(parseBody){
-            var peopleData = parseBody;
-            
-            // peopleData.forEach(element => {
-            //     const name = element.name;
-            // });
-
-            response.render('listAll');
-        })
-        .catch((error) => {
-            return console.log(error);
-        })
-});
-
 app.post('/searchTorrex', (request,response) =>{
     
-    const nameForSearch = request.body.name;
     const URL = 'https://torre.bio/api/people?q=' + request.body.name;
 
     var options = {
@@ -47,11 +30,7 @@ app.post('/searchTorrex', (request,response) =>{
     };
 
     requestPromise(options)
-        .then(function(parseBody){
-            var peopleData = parseBody;
-            peopleData.forEach(element => {
-                
-            });
+        .then( (peopleData) => {
             response.render('searchTorrex',{peopleData});
         })
         .catch((error) => {
@@ -60,4 +39,3 @@ app.post('/searchTorrex', (request,response) =>{
 });
 
 exports.app = functions.https.onRequest(app);
-
