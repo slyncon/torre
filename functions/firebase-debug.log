@@ -1,51 +1,50 @@
-[debug] [2019-02-10T00:08:37.022Z] ----------------------------------------------------------------------
-[debug] [2019-02-10T00:08:37.025Z] Command:       /usr/local/bin/node /home/node/.npm-global/bin/firebase serve -p 9005 -o 0.0.0.0 --only functions,hosting
-[debug] [2019-02-10T00:08:37.025Z] CLI Version:   4.2.1
-[debug] [2019-02-10T00:08:37.025Z] Platform:      linux
-[debug] [2019-02-10T00:08:37.025Z] Node Version:  v8.12.0
-[debug] [2019-02-10T00:08:37.025Z] Time:          Sun Feb 10 2019 00:08:37 GMT+0000 (UTC)
-[debug] [2019-02-10T00:08:37.025Z] ----------------------------------------------------------------------
+[debug] [2019-02-10T00:48:32.258Z] ----------------------------------------------------------------------
+[debug] [2019-02-10T00:48:32.260Z] Command:       /usr/local/bin/node /home/node/.npm-global/bin/firebase serve -p 9005 -o 0.0.0.0 --only functions,hosting
+[debug] [2019-02-10T00:48:32.260Z] CLI Version:   4.2.1
+[debug] [2019-02-10T00:48:32.260Z] Platform:      linux
+[debug] [2019-02-10T00:48:32.260Z] Node Version:  v8.12.0
+[debug] [2019-02-10T00:48:32.278Z] Time:          Sun Feb 10 2019 00:48:32 GMT+0000 (UTC)
+[debug] [2019-02-10T00:48:32.279Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-02-10T00:08:37.035Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-02-10T00:08:37.035Z] > authorizing via signed-in user
-[debug] [2019-02-10T00:08:37.038Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/torre-495e1  
+[debug] [2019-02-10T00:48:32.333Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-10T00:48:32.333Z] > authorizing via signed-in user
+[debug] [2019-02-10T00:48:32.335Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-10T00:48:32.335Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2019-02-10T00:48:32.841Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-10T00:48:32.906Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/torre-495e1  
  
-[debug] [2019-02-10T00:08:38.109Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-10T00:08:38.114Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torre-495e1  
+[debug] [2019-02-10T00:48:33.944Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-10T00:48:33.948Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/torre-495e1  
  
-[debug] [2019-02-10T00:08:39.200Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-10T00:48:34.994Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/usr/src/app'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2019-02-10T00:08:40.079Z] Fetching environment
-[debug] [2019-02-10T00:08:40.083Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050:getServerAppConfig  
+[debug] [2019-02-10T00:48:38.058Z] Fetching environment
+[debug] [2019-02-10T00:48:38.085Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050:getServerAppConfig  
  
-[debug] [2019-02-10T00:08:40.084Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050/clients/_:getWebAppConfig  
+[debug] [2019-02-10T00:48:38.086Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/553775036050/clients/_:getWebAppConfig  
  
-[debug] [2019-02-10T00:08:40.548Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-10T00:48:38.533Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-10T00:48:38.534Z] Starting @google-cloud/functions-emulator
+[debug] [2019-02-10T00:48:39.405Z] <<< HTTP RESPONSE 200
 [info] i  hosting[torre-495e1]: Serving hosting files from: public
 [info] ✔  hosting[torre-495e1]: Local server: http://0.0.0.0:9005
-[debug] [2019-02-10T00:08:41.380Z] <<< HTTP RESPONSE 200
-[debug] [2019-02-10T00:08:41.380Z] Starting @google-cloud/functions-emulator
-[debug] [2019-02-10T00:08:43.533Z] Parsing function triggers
+[debug] [2019-02-10T00:48:41.206Z] Parsing function triggers
 [info] ✔  functions: app: http://0.0.0.0:9006/torre-495e1/us-central1/app
 [info] [hosting] Rewriting / to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting / to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /favicon.ico to local function app
-[info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
+[info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /favicon.ico to local function app
-[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting / to local function app
@@ -53,13 +52,6 @@
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting /searchTorrex to local function app
-[info] [hosting] Rewriting / to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app
 [info] [hosting] Rewriting /searchTorrex to local function app

@@ -38,18 +38,22 @@
 
                 {{#each peopleData}}
                     <li class="collection-item avatar">
-
-                        {{#if picture}}
-                            <img src={{picture}} alt="" class="circle">
-                        {{else}}
-                            <i class="material-icons circle">person</i>
-                        {{/if}}
-
-                        <span class="title light-blue-text lighten-2 truncate">{{name}}</span>
+                        
+                        <a href="https://torre.bio/{{publicId}}" target="_blank">
+                            {{#if picture}}
+                                <img src={{picture}} alt="" class="circle">
+                            {{else}}
+                                <i class="material-icons circle">person</i>
+                            {{/if}}
+                        </a>
+                        
+                        <a href="https://torre.bio/{{publicId}}" target="_blank">
+                            <span class="title light-blue-text lighten-2 truncate">{{name}}</span>
+                        </a>
+                        
                         <p>
                             {{professionalHeadline}} 
                             <br>
-                            
                         </p>
                         
                     </li>
