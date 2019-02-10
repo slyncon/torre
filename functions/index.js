@@ -33,11 +33,6 @@ app.post('/searchTorrex', (request,response) =>{
 
     requestPromise(options)
         .then((peopleData) =>{
-
-            peopleData.forEach(element => {
-                
-            });
-
             response.render('searchTorrex',{peopleData});
         })
         .catch((error) => {
